@@ -1,0 +1,83 @@
+/* Default font throughout website */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif !important;
+}
+
+/* Body */
+body {
+  background-color: #111;
+  margin-top: 72px;
+  color: #eee;
+}
+/* Navbar */
+
+.navbar {
+  background-color: #111;
+}
+.nav-link {
+  font-size: 1.3rem;
+}
+.nav-brand {
+  font-size: 1.3rem;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  filter: invert(1);
+}
+
+.fas {
+  font-family: "Font Awesome 5 Free" !important;
+}
+.fab {
+  font-family: "Font Awesome 5 Brands" !important;
+}
+
+/* Introduction Container */
+#intro-container {
+  min-width: 100%;
+  min-height: 100vh;
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+  padding-top: 130px;
+}
+#intro {
+  position: relative;
+  padding-bottom: 20px;
+}
+#intro:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  bottom: 0;
+  top: 100%;
+  border-bottom: 5px solid #eee;
+}
+.intro-text {
+  font-size: 2.8rem;
+  letter-spacing: 0.5px;
+}
+.about-text {
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  line-height: 45px;
+}
+
+.work-btn {
+  border: 4px white solid;
+  width: 300px;
+  height: 65px;
+  letter-spacing: 1.5px;
+  font-size: 1.4rem;
+}
+.work-btn-cs {
+  border: 4px black solid;
+  width: 250px;
+  height: 65px;
+  letter-spacing: 1.5px;
+}

@@ -14,62 +14,11 @@
   color: #111 !important;
 }
 
-/* Dark Mode Toggle Button */
-
-/* * {
-  box-sizing: border-box;
-} */
-
-.checkbox {
-  opacity: 0;
-  position: absolute;
-}
-
-.checkbox-label {
-  background-color: #eee;
-  width: 50px;
-  height: 26px;
-  border-radius: 50px;
-  position: relative;
-  padding: 5px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.fa-moon {
-  color: #f1c40f;
-}
-
-.fa-sun {
-  color: #f39c12;
-}
-
-.checkbox-label .ball {
-  background-color: #111;
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  left: 2px;
-  top: 2px;
-  border-radius: 50%;
-  transition: transform 0.2s linear;
-}
-
-.checkbox:checked + .checkbox-label .ball {
-  transform: translateX(24px);
-}
-
 [data-theme="dark"] .checkbox-label {
   background-color: #111;
 }
 [data-theme="dark"] .checkbox-label .ball {
   background-color: #eee;
-}
-
-.navbar-toggler {
-  border: 1px solid #eee;
 }
 
 [data-theme="dark"] .navbar-toggler {
@@ -93,4 +42,20 @@
 }
 [data-theme="dark"] #intro:before {
   border-bottom: 5px solid #111;
+}
+
+[data-theme="dark"] .line-block {
+  background-color: #111 !important;
+  min-width: 150px;
+  min-height: 2px;
+  max-height: 2px;
+  margin-top: 25px;
+  margin-right: 20px;
+}
+
+[data-theme="dark"] .work-btn-cs {
+  border: 4px #111 solid;
+  width: 250px;
+  height: 65px;
+  letter-spacing: 1.5px;
 }

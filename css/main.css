@@ -12,6 +12,7 @@ body {
   margin-top: 72px;
   color: #eee;
 }
+
 /* Navbar */
 
 .navbar {
@@ -27,7 +28,9 @@ body {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   filter: invert(1);
 }
-
+.navbar-toggler {
+  border: 1px solid #eee;
+}
 .fas {
   font-family: "Font Awesome 5 Free" !important;
 }
@@ -35,10 +38,53 @@ body {
   font-family: "Font Awesome 5 Brands" !important;
 }
 
+/* Dark Mode Toggle Button */
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #eee;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+.checkbox-label .ball {
+  background-color: #111;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
 /* Introduction Container */
 #intro-container {
   min-width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh - 72px);
   background-image: url("../images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -76,8 +122,46 @@ body {
   font-size: 1.4rem;
 }
 .work-btn-cs {
-  border: 4px black solid;
+  border: 4px #eee solid;
   width: 250px;
   height: 65px;
-  letter-spacing: 1.5px;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+}
+
+.line-block {
+  background-color: #eee;
+  min-width: 150px;
+  min-height: 2px;
+  max-height: 2px;
+  margin-top: 25px;
+  margin-right: 20px;
+}
+.headline-text {
+  font-size: 1.8rem;
+}
+.breath {
+  margin: 150px auto;
+}
+.role {
+  font-size: 1.563rem;
+  letter-spacing: 1.25px;
+  opacity: 80%;
+}
+.company {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+
+/* Utility Classes */
+.mt-150 {
+  margin-top: 150px;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.scroll-element {
+  scroll-margin: 100px 0 0 0;
 }

@@ -98,7 +98,7 @@ body {
 #intro:before {
   content: "";
   position: absolute;
-  width: 50%;
+  width: 41%;
   height: 1px;
   bottom: 0;
   top: 100%;
